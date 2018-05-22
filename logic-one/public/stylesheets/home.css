@@ -1,0 +1,103 @@
+/* 
+===============================
+Utility CSS for filling height 
+===============================
+*/
+
+.fill-height {
+    height: 100%;
+}
+
+/* 
+===============================
+Home page styling
+===============================
+*/
+#main-jumbotron {
+    margin: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 56px;
+    min-height: calc(100vh - 54px);
+}
+
+.breadcrumb {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#home-container {
+    min-height: 80%;
+}
+
+#main-row {
+    min-height: 500px;
+}
+
+#left-column {
+    padding-right: 0;
+}
+
+#right-column {
+    border-top: 1px solid rgba(0,0,0,.125);
+    border-right: 1px solid rgba(0,0,0,.125);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-bottom-right-radius: .25rem;
+    border-top-right-radius: .25rem;
+    background-color: white;
+    padding: 15px;
+}
+
+/* 
+===============================
+Dropdown selection styles 
+===============================
+*/
+#dropdown-selection-menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.list-group-item {
+    border-left: none;
+    border-right: none;
+}
+
+.list-group-item.active {
+    background-color: #1f5380;
+}
+
+.list-group-item:first-child {
+    border-top-right-radius: 0;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#item-selection-button {
+    height: 50px;
+    border-radius: 0;
+    width: 100%;
+    border-top-left-radius: .25rem;
+    background-color: #1f5380;
+    border: none;
+}
+
+#item-selection-button:focus {
+    box-shadow: none;
+}
+
+#list-tab {
+    border-radius: 5px 0 0 5px;
+    border: 1px solid rgba(0,0,0,.125);
+    background-color: white;
+    max-height: 500px;
+    overflow-y: scroll;
+}

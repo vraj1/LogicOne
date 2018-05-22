@@ -1,0 +1,105 @@
+/* 
+===============================
+Exercise and feedback styles
+===============================
+*/
+#exercise-area {
+    height: calc(100% - 38px);
+}
+
+#feedback-area {
+    padding: 0px;
+    text-align: right;
+}
+
+#feedback-alert {
+    margin: 0;
+    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 200px;
+}
+
+#submit-area {
+    padding: 0;
+    text-align: right;
+    min-width: 140px;
+    max-width: 140px;
+}
+
+h4 {
+    padding: 5px;
+}
+
+/* 
+===============================
+Truth Table Styles
+===============================
+*/
+table {
+    text-align: center;
+    margin: auto;
+}
+
+table tr {
+    height: 50px;
+    padding: 0px;
+    
+    border-bottom: 1px solid #e9e9e9;
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+
+table th {
+    padding: 15px;
+}
+
+table td {
+    min-width: 50px;
+    height: 50px;
+}
+
+.truth-table-button {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.truth-table-button:focus {
+    outline: 0;
+}
+
+.truth-table-button:active {
+    background-color: #efefef;
+}
+
+/* 
+===============================
+Symbolization Exercise Styles
+===============================
+*/
+#symbolization-exercise {
+    padding: 5px;
+}
+
+#symbol-buttons {
+    padding: 10px 0;
+}
+
+.symbol-btn {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}

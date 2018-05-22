@@ -1,0 +1,36 @@
+<!-- Classroom selection button -->
+<button id="item-selection-button"  class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+    <% if(user.classrooms && user.classrooms.length > 0) { %>
+        classroom-id=<%= user.classrooms[user.classrooms.length - 1].id %>
+    <% } %>
+    >
+    <!-- Display user's first classroom if exists -->
+    <% if(user.classrooms && user.classrooms.length > 0) { %>
+        <% if (user.classrooms[user.classrooms.length - 1]) { %>
+            <%= user.classrooms[user.classrooms.length - 1].name %>
+        <% } %>
+    <% } else { %>
+        No Classrooms
+    <% } %>
+</button>
+
+<!-- Dropdown selection menu -->
+<div id="dropdown-selection-menu" class="dropdown-menu" aria-labelledby="classroom-selection-button">
+    <% if(user.classrooms && user.classrooms.length > 0) { %>
+        <% user.classrooms.forEach(function(classroom) { %>
+            <% if (classroom.id != user.classrooms[user.classrooms.length - 1].id) { %>  
+                <button class="dropdown-item classroom-dropdown-item" classroom-id=<%= classroom.id %>>
+                    <%= classroom.name %>
+                </button> 
+            <% } %>
+        <% }); %>
+    <% } %>
+    
+    <!-- Classroom create/join buttons -->
+    <button class="dropdown-item" type="button" data-toggle="modal" data-target="#joinClassroomModal">[+] Join Classroom</button>
+    <a class="dropdown-item" href="/classroom/create">[+] Create Classroom</a>
+    
+</div>
+
+<!-- Assignments list area -->
+<div id="assignment-list-area"></div>

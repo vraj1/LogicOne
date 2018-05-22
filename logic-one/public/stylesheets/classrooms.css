@@ -1,0 +1,12 @@
+/* 
+===============================
+Classroom page styles
+===============================
+*/
+#classroom-name-input {
+    width: 100%;
+}
+
+#classroom-container {
+    min-height: 80%;
+}

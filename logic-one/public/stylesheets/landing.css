@@ -1,0 +1,51 @@
+html {
+    height: 100%;
+}
+
+#landing {
+    background-color: #e0e0e0;
+    background-image: url("https://i.imgur.com/MkLdnyT.png");
+    background-size: 450px 100px;
+    background-repeat: repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+    padding-top: 56px;
+}
+
+#landing #title {
+    font-size: 4rem;
+}
+
+#jumbo-login-button {
+    background-color: #1f5380;
+    outline-color: #1f5380;
+}
+
+#features {
+    position: relative;
+    display: block;
+    top: -50px;
+    padding-top: 50px;
+}
+
+.lead .btn-lg {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.title {
+    margin: 0;
+    font-size: 3rem;
+    padding: 40px;
+}
+
+.col-card {
+    margin-bottom: 30px;
+}
+
+#plans {
+    background-color: #e3e3e3;
+}

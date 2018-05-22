@@ -1,0 +1,216 @@
+<!-- Starter Template retrieved from https://getbootstrap.com/docs/4.0/getting-started/introduction/ -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>LogicAcademy - Landing</title>
+      
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/landing.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+  </head>
+  
+  <header>
+    <!-- Navigation bar -->
+    <% include partials/header_landing.ejs %>
+  </header>
+  
+  <body>
+    <!-- Flashy jumbotron with logo and tagline -->
+    <div id="landing" class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 id="title" class="text-center">LogicAcademy</h1>
+            <p class="lead text-center">
+                A clean, engaging, and intuitive way to teach and learn First-Order Logic.
+                </p>
+                
+            <p class="lead text-center">
+                <a id="jumbo-login-button" class="btn btn-primary btn-lg" href="/login" role="button">Login</a>
+                <a class="btn btn-success btn-lg" href="/signup" role="button">Signup</a>
+            </p>
+        </div>
+    </div>
+    
+    <!-- Features list -->
+    <div id="features" class="container-fluid">
+        <h1 class="text-center title">Features</h1>
+        <div class="row feature">
+            <div class="col-sm-4 offset-md-2 col-card">
+                <div class="card">
+                    <h5 class="card-header">Syntax Parsing</h5>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Introduce yourself into the world of predicate logic by identifying correct notation
+                            and syntax of logical sentences.
+                        </p>
+                        
+                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#parsingModal">
+                            Example
+                        </button>
+                        
+                        <!-- Parsing modal -->
+                        <div class="modal fade" id="parsingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Parsing Example</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <img alt="" src="https://i.imgur.com/cEovaiy.png">
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" name="exampleRadios" type="radio" checked>
+                                                        <label class="form-check-label">
+                                                            Official Notation
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" name="exampleRadios" type="radio">
+                                                        <label class="form-check-label">
+                                                            Unofficial Notation
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" name="exampleRadios" type="radio">
+                                                        <label class="form-check-label">
+                                                            Not Well-Formed
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-4 col-card">
+                <div class="card text-right">
+                    <h5 class="card-header">Symbolizations</h5>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Learn how to symbolize English sentences into predicate logic and vice-versa, then
+                            master the translation of ambiguity into concrete, logical sentences.
+                        </p>
+                        
+                        <a href="#" class="btn btn-primary disabled">
+                            Example (coming soon)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row feature">
+            <div class="col-sm-4 offset-md-2 col-card">
+                <div class="card">
+                    <h5 class="card-header">Truth Tables</h5>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Discover the power of truth tables as they pertain to thinking in predicate logic 
+                            and gain valuable insight on the inner workings of logic.
+                        </p>
+                        
+                        <a href="#" class="btn btn-primary disabled">
+                            Example (coming soon)
+                        </a>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="col-sm-4 col-card">
+                <div class="card text-right">
+                    <h5 class="card-header">Derivations</h5>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Dive straight into the heart of predicate logic - prove logical theorems and 
+                            then master the art of logic by deriving truths using logical rules.
+                        </p>
+                            
+                            
+                        <a href="#" class="btn btn-primary disabled">
+                            Example (coming soon)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Plans -->
+    <div id="plans" class="container-fluid">
+        <h1 class="text-center title">Plans</h1>
+        
+        <div class="row">
+            <div class="col-sm-3 offset-md-3 text-center">
+                <div class="card col-card">
+                    <h5 class="card-header">Student Account</h5>
+                    <div class="card-body">
+                        <p class="card-text text-left">
+                            This account is intended for student use - students can join classrooms,
+                            complete exercises & assignments and create their own exercises to solidify
+                            their knowledge.
+                            <br><br>
+                            *Requires a University account.
+                        </p>
+                        
+                        <a href="/signup" class="btn btn-success btn-block">
+                            Create Account
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 text-center">
+                <div class="card col-card">
+                    <h5 class="card-header">Instructor Account</h5>
+                    <div class="card-body">
+                        <p class="card-text text-left">
+                            This account is intended for instructor use - instructors can create classrooms, 
+                            assignments, exercises, and have full access to exercise answers. 
+                            <br><br>
+                            *Requires a University account & ID verification.
+                        </p>
+                        
+                        <a href="/signup" class="btn btn-success btn-block">
+                            Create Account
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <% include partials/footer.ejs %>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

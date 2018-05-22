@@ -1,0 +1,8 @@
+<h4 class="text-center">Exercises</h4>
+
+<!-- Render Available Exercises -->
+<% exercises.forEach(function(exercise){ %>
+    <a class="list-group-item list-group-item-action" data-toggle="list" role="tab" href=<%= "/exercises/" + exercise.id %>>
+        <%= exercise.problem %>
+    </a>
+<% }); %>

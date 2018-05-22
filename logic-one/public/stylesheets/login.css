@@ -1,0 +1,41 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: #e0e0e0;
+    background-image: url("https://i.imgur.com/MkLdnyT.png");
+    background-size: 450px 100px;
+    background-repeat: repeat;
+}
+
+#main-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100vh;
+}
+
+#main-container-row {
+    padding-top: 10%;
+}
+
+form{
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 5% 5%;
+    background-color: white;
+    box-shadow: 0px 10px 28px 0px rgba(0, 0, 0, 0.75);
+}
+
+#login-text {
+    font-size: 3rem;
+}
+
+#remember-me {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+#not-member {
+  padding-top: 25px;
+}

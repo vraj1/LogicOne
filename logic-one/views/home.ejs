@@ -1,0 +1,79 @@
+<!-- Starter Template retrieved from https://getbootstrap.com/docs/4.0/getting-started/introduction/ -->
+<!doctype html>
+<html lang="en" class="fill-height">
+    <head>
+        <title>LogicAcademy - Home</title>
+          
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/stylesheets/header.css">
+        <link rel="stylesheet" href="/stylesheets/home.css">
+        <link rel="stylesheet" href="/stylesheets/classrooms.css">
+        <link rel="stylesheet" href="/stylesheets/footer.css">
+    </head>
+    
+    <header>
+        <!-- Navigation bar -->
+        <% include partials/header.ejs %>
+    </header>
+  
+    <body>
+        <!-- Main Container -->
+        <div id="main-jumbotron" class="jumbotron jumbotron-fluid"> 
+            <div id="home-container" class="container container-fluid">
+                
+                <!-- Breadcrumbs -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">Home</li>    
+                    </ol>
+                </nav>
+                
+                <!-- Main row -->
+                <div id="main-row" class="row">
+                    
+                    <!-- Left Column -->
+                    <div id="left-column" class="col-sm-3">
+                        <div class="list-group fill-height" id="list-tab" role="tablist">
+                            <div class="dropdown">
+                                <% include partials/home/classroom_list.ejs %>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right column -->
+                    <div id="right-column" class="col-sm-9">
+                        <div class="container-fluid fill-height">
+                            <% include partials/home/classroom_area.ejs %>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Join Classroom Modal -->
+        <% include partials/home/classroom_join_modal.ejs %>
+        
+        <!-- Footer -->
+        <footer>
+            <% include partials/footer.ejs %>
+        </footer>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            
+        <!-- Custom JavaScript -->
+        <script type="text/javascript" src="/js/home.js"></script>
+        <script type="text/javascript" src="/js/dropdownSlide.js"></script>
+    </body>
+</html>
